@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo"><a href="index.html"><img src="img/logo-colored.png" alt="logo"></a></div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="header-tools">
+                <div class="tool-item"><i class="fa fa-user"></i><span>Profile</span></div>
+                <div class="tool-item"><i class="fa fa-comment"></i><span>Message</span></div>
+                <div class="tool-item"><i class="fa fa-heart"></i><span>Orders</span></div>
+                <div class="tool-item"><a href="cart.html" class="icon-item"><i class="fa fa-shopping-cart"></i><span>My
+                            cart</span></a></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <div class="container nav-flex">
+            <div class="left-links">
+                <a href="#"><i class="fa fa-bars"></i> All category</a>
+                <a href="#">Hot offers</a>
+                <a href="#">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <a href="#">Help <i class="fa fa-chevron-down"></i></a>
+            </div>
+            <div class="right-links">
+                <div class="lang-select">English, USD <i class="fa fa-chevron-down"></i></div>
+                <div class="ship-to">
+                    Ship to
+                    <img src="img/DE@2x.png" alt="DE" class="nav-flag">
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container cart-main-wrapper">
+        <h3 class="page-title">My cart (3)</h3>
+
+        <div class="cart-flex-container">
+
+            <div class="cart-left-section">
+                <div class="cart-items-list">
+
+                    <div class="cart-item">
+                        <div class="item-img-box"><img src="img/Bitmap.png" alt="product"></div>
+                        <div class="item-details">
+                            <p class="item-name">T-shirts with multiple colors, for men and lady</p>
+                            <p class="item-meta">Size: medium, Color: blue, Material: Plastic <br> Seller: Artel Market
+                            </p>
+                            <div class="item-btns">
+                                <button class="remove">Remove</button>
+                                <button class="save">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="item-pricing">
+                            <p class="price">$78.99</p>
+                            <select class="qty-select">
+                                <option>Qty: 1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-img-box"><img src="img/cam.png" alt="product"></div>
+                        <div class="item-details">
+                            <p class="item-name">Canon Camera EOS 2000D, Black 10x zoom</p>
+                            <p class="item-meta">Size: Large, Color: Black, Material: Metal <br> Seller: Best Buy</p>
+                            <div class="item-btns">
+                                <button class="remove">Remove</button>
+                                <button class="save">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="item-pricing">
+                            <p class="price">$450.00</p>
+                            <select class="qty-select">
+                                <option>Qty: 1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-img-box"><img src="img/watch.png" alt="product"></div>
+                        <div class="item-details">
+                            <p class="item-name">Xiaomi Mi Band 6 Smart Watch</p>
+                            <p class="item-meta">Size: Small, Color: Black, Material: Silicon <br> Seller: Tech Zone</p>
+                            <div class="item-btns">
+                                <button class="remove">Remove</button>
+                                <button class="save">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="item-pricing">
+                            <p class="price">$29.99</p>
+                            <select class="qty-select">
+                                <option>Qty: 1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-bottom-nav">
+                    <a href="index.html" class="btn-back"><i class="fa fa-arrow-left"></i> Back to shop</a>
+                    <button class="btn-remove-all">Remove all</button>
+                </div>
+            </div>
+
+            <aside class="cart-right-section">
+                <div class="coupon-section">
+                    <p>Have a coupon?</p>
+                    <div class="coupon-input">
+                        <input type="text" placeholder="Add coupon">
+                        <button>Apply</button>
+                    </div>
+                </div>
+
+                <div class="checkout-card">
+                    <div class="row"><span>Subtotal:</span> <span>$558.98</span></div>
+                    <div class="row"><span>Discount:</span> <span class="red">-$10.00</span></div>
+                    <div class="row"><span>Tax:</span> <span class="green">+$2.00</span></div>
+                    <hr class="sum-hr">
+                    <div class="row total"><span>Total:</span> <span>$550.98</span></div>
+                    <button class="btn-checkout">Checkout</button>
+                    <div class="payment-logos">
+                        <img src="img/visa.png" alt="visa">
+                        <img src="img/paypal.png" alt="paypal">
+                        <img src="img/apple-pay.png" alt="applepay">
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+        <section class="saved-section">
+
+            <h4>Saved for later</h4>
+
+            <div class="saved-grid">
+
+                <div class="saved-card">
+
+                    <div class="saved-img"><img src="img/cam.png" alt="tablet"></div>
+
+                    <p class="s-price">$99.50</p>
+
+                    <p class="s-title">GoPro HERO6 4K Action Camera - Black</p>
+
+                    <button class="btn-move"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+
+                </div>
+
+                <div class="saved-card">
+
+                    <div class="saved-img"><img src="img/image 33.png" alt="phone"></div>
+
+                    <p class="s-price">$99.50</p>
+
+                    <p class="s-title">GoPro HERO6 4K Action Camera - Black</p>
+
+                    <button class="btn-move"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+
+                </div>
+
+                <div class="saved-card">
+
+                    <div class="saved-img"><img src="img/watch.png" alt="watch"></div>
+
+                    <p class="s-price">$99.50</p>
+
+                    <p class="s-title">GoPro HERO6 4K Action Camera - Black</p>
+
+                    <button class="btn-move"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+
+                </div>
+
+                <div class="saved-card">
+
+                    <div class="saved-img"><img src="img/image 34.png" alt="laptop"></div>
+
+                    <p class="s-price">$99.50</p>
+
+                    <p class="s-title">GoPro HERO6 4K Action Camera - Black</p>
+
+                    <button class="btn-move"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="blue-promo-banner">
+
+            <div class="promo-content">
+
+                <h3>Super discount on more than 100 USD</h3>
+
+                <p>Have you ever finally just write dummy text which is not your own</p>
+
+            </div>
+
+            <button class="btn-shop-now">Shop now</button>
+
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid container">
+
+            <div class="footer-col brand-col">
+                <div class="logo"><img src="img/logo-colored.png" alt="logo"></div>
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Partnership</h4>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Money Refund</a>
+                <a href="#">Shipping</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>For users</h4>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+                <a href="#">Settings</a>
+                <a href="#">My Orders</a>
+            </div>
+
+            <div class="footer-col app-col">
+                <h4>Get app</h4>
+                <div class="store-btns">
+                    <img src="img/market-button.png" alt="App Store" class="app-store-img">
+                    <img src="img/Group.png" alt="Google Play" class="app-store-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>© 2023 Ecommerce.</p>
+                <div class="footer-lang">
+                    <img src="img/US@2x.png" alt="flag"> English <i class="fa fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
